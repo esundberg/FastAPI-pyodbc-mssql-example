@@ -1,0 +1,86 @@
+URL: 172.19.1.85:9000/testtable
+
+==============================================================================
+GET 172.19.1.85:9000/testtable
+
+Response Body
+[
+    {
+        "Id": 1,
+        "name": "MyName",
+        "value": "MyValue",
+        "date": "2020-05-01T15:50:00",
+        "comment": "My Super long comment"
+    },
+    {
+        "Id": 2,
+        "name": "MyName2",
+        "value": "MyValue2",
+        "date": "2020-05-01T15:50:00",
+        "comment": "My Super long comment.2222222222222"
+    }
+]
+
+==============================================================================
+POST 172.19.1.85:9000/testtable
+
+Request Body
+{ 
+	"name": "John Doe",
+	"value": "I am Positive",
+	"date": "2020-05-01 15:50:00",
+	"comment": "Another Comment"
+}
+
+Response Body
+{
+    "message": "created",
+    "id": 27
+}  
+
+==============================================================================
+PUT 172.19.1.85:9000/testtable/27
+
+Request Body
+{ 
+	"name": "John Doe Sr.",
+	"value": "I am Positive",
+	"date": "2020-05-01 20:50:00",
+	"comment": "Another Comment"
+}
+
+Response Body
+{
+    "message": "updated"
+}
+
+==============================================================================
+GET 172.19.1.85:9000/testtable/27
+
+Response Body
+[
+    {
+        "Id": 27,
+        "name": "John Doe Sr.",
+        "value": "I am Positive",
+        "date": "2020-05-01T20:50:00",
+        "comment": "Another Comment"
+    }
+]
+
+==============================================================================
+DELETE 172.19.1.85:9000/testtable/27
+
+Response Body
+{
+    "message": "deleted"
+}
+
+==============================================================================
+GET 172.19.1.85:9000/testtable/27
+# Ran after record 27 was deleted, so there is no result
+
+Response Body
+{
+    "message": "no results found"
+}

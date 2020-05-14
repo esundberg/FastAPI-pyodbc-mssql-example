@@ -1,0 +1,10 @@
+# Sampel Config file
+# Rename or copy to config.py
+
+db = {
+    "server": "mssqldb.my.network",
+    "port": "1433",
+    "database": "MyDatabase",
+    "user": "my_db_user",
+    "password": "super_secret"
+}

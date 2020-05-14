@@ -1,0 +1,23 @@
+POST 172.19.1.85:9000/rawbody
+
+Request Body
+{ 
+	"body": "this is my body",
+	"similiar": "There are many like it",
+	"unique": "but this one is mine"
+}
+
+Response Body
+{
+    "message": "success",
+    "mybody": {
+        "body": "this is my body",
+        "similiar": "There are many like it",
+        "unique": "but this one is mine"
+    }
+}
+
+
+uvicorn console shows the following
+{'body': 'this is my body', 'similiar': 'There are many like it', 'unique': 'but this one is mine'}
+INFO:     10.115.253.4:11032 - "POST /rawbody HTTP/1.1" 200 OK
