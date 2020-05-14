@@ -9,12 +9,12 @@ Python Virtual Enviroment:
 # Setup
 1. Go in to cloned directory
 2. Create Python3 Virtual Enviroment
-	#python3 -m venv venv
+	python3 -m venv venv
 3. Active the Virtaul Enviroment
-	# python3 -m venv env
+	python3 -m venv env
 	You should see (env) infront of your prompt
 4. Install Setup tools and pip
-	# pip3 install -U setuptools pip3
+	pip3 install -U setuptools pip3
 5. Install the required Python 3 Library's use the list below or use the requirements file
 	pip install FastAPI
 	pip install Uvicorn
