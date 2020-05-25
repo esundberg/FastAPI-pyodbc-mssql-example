@@ -13,12 +13,13 @@
 	- source env/bin/activat
 	- You should see (env) infront of your prompt
 4. Install Setup tools and pip
-	- pip3 install -U setuptools pip
+	- pip3 install -U setuptools pip wheel
 5. Install the required Python 3 Library's use the list below or use the requirements file
 	- pip install FastAPI
-	- pip install Uvicorn
+	- pip install uvicorn
 	- pip install pydantic
 	- pip install pyodbc
+	- #(Mysql) pip install mysql-connector-python
 6. Move or copy config.py.sample to config.py	
 7. Run uvicorn web server
     - uvicorn api:app --reload --host=0.0.0.0 --port=9000
