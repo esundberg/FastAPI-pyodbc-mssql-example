@@ -3,6 +3,7 @@
 - Python 3.6
 - PIP
 - Python Virtual Enviroment: https://realpython.com/python-virtual-environments-a-primer/
+- To install pip and Virtual Enviroment on Ubuntu 20.04 apt install python3-pip python3-venv
 
 
 # Setup
